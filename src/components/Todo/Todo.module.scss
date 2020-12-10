@@ -1,5 +1,30 @@
-.todo {
+
+.todo{
+  // border: 2px pink solid;
+  // background-color: rgba(238, 46, 46, 0.87);
+
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    // border: 1px solid black;
+    font-family: sans-serif;
+    color: nerko One;
+    text-align: center;
+    color: white;
+    // text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+    background-color: grey;
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 1%;
+
   }
+
+button {
+  border-radius: 30%;
+  color: red;
+  background-color: black;
+
+  &:onhover{
+    background-color: black;
+  }
+}

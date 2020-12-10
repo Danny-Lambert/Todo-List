@@ -8,19 +8,21 @@ state = {
 
 handleSubmit = (e) => {
   e.preventDefault();
+  this.props.onFormSubmit(this.state.entry);
+  this.setState({entry : ""});
 }
 
   render() {
     return (
       <>
-        <form>
-        <input 
-        type="text"  
-        placeholder="Add todo"
-        value = {this.state.entry}
-        onChange={(e) => this.setState({entry: e.target.value})} 
-        />
-        <button>Add</button>
+        <form onSubmit={this.handleSubmit}>
+          <input 
+            type="text"  
+            placeholder="Add todo"
+            value = {this.state.entry}
+            onChange={(e) => this.setState({entry: e.target.value})} 
+          />
+        <button className="Add">Add</button>
 
         </form>
       </>

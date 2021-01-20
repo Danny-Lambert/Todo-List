@@ -15,16 +15,17 @@ handleSubmit = (e) => {
   render() {
     return (
       <>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} >
           <input 
             type="text"  
             placeholder="Add todo"
             value = {this.state.entry}
             onChange={(e) => this.setState({entry: e.target.value})} 
           />
-        <button className="Add">Add</button>
-
-        </form>
+          <div className = {styles.SubmitForm}>
+            <button className="Add">Click to Add</button>
+            </div>
+          </form>
       </>
     );
   }

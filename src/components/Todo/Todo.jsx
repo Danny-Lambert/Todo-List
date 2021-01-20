@@ -5,8 +5,8 @@ class Todo extends Component {
   render() {
     return (
       <div className={styles.todo}>
-        <p>{this.props.content}</p>
-        <button className="button" onClick={() => this.props.onDelete(this.props.id)}>Delete</button>
+        <p input type="text">{this.props.content}</p>
+        <button className="removeButton" onClick={() => this.props.onDelete(this.props.id)}>Delete item</button>
       </div>
     );
   }

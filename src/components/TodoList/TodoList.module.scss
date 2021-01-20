@@ -1,5 +1,12 @@
 body {
     background-color: transparent;
     border-radius: 10%;
+    padding: 2%;
+    width: 30%;
 
 }
+
+@media only screen and (max-width: 1000px) {
+    body{
+        padding: 50%;
+}}

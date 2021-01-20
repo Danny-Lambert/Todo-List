@@ -19,3 +19,15 @@
 .onDelete{
   background-color: red;
 }
+
+@media only screen and (max-width: 1400px) {
+  body {
+    background-image: url(./images/todobackground.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-size: 100%;
+      // background-color: rgb(219, 58, 58);
+      color: whitesmoke;
+      margin: 100px 400px 100px 400px;
+    }
+}

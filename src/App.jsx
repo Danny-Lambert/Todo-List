@@ -31,18 +31,19 @@ class App extends Component {
 
   render() { 
     return (
+      
       <div class="container">
         <Header 
         tasks={this.state.tasks.length} 
         user={this.state.user}
         />
+          <SubmitForm 
+          onFormSubmit = {this.handleSubmit}
+          />
         <div className ="list_background">
         <TodoList 
           tasks={this.state.tasks}
           onDelete={this.handleDelete} 
-        />
-        <SubmitForm 
-        onFormSubmit = {this.handleSubmit}
         />
         </div>
       </div>

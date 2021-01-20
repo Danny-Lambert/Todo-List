@@ -10,18 +10,19 @@
     font-family: sans-serif;
     color: nerko One;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     // text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
-    background-color: grey;
+    background-color: rgb(243, 253, 214);
     border: 1px solid black;
     font-weight: bold;
     padding: 1%;
+    word-wrap: break-word;
 
   }
 
-button {
+button.removeButton {
   border-radius: 30%;
-  color: red;
+  color: white;
   background-color: black;
 
   &:onhover{
